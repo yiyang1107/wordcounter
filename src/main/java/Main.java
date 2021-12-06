@@ -33,7 +33,7 @@ public class Main {
             for(Map.Entry<String, Integer> entry: map.entrySet())
             {
                 topWords.offer(entry);
-                if(topWords.size()>5)
+                if(topWords.size()>100)
                     topWords.poll();
             }
             int n = topWords.size();
